@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from './components/Header/Header';
 import './App.css';
+import Shop from './components/shop/Shop';
 
 const App = () => {
   return (
     <div className='App'>
       <Header></Header>
+      <Shop></Shop>
     </div>
   );
 };
