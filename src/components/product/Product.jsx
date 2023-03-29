@@ -1,5 +1,13 @@
 import React from 'react';
+import { faFileImport, faImagePortrait } from '@fortawesome/free-solid-svg-icons';
+faFileImport
+faImagePortrait
 import './Product.css'
+
+
+
+
+
 const Product = (props) => {
    // console.log(props.Product)
    const {img,name,seller, ratings,price} = props.product;
@@ -18,7 +26,10 @@ const Product = (props) => {
        <p>Ratings:{ratings} stars</p>
       </div>
        <button onClick={()=> handleAddToCart(props.product)
-    } className='btn-cart'>Add to Cart</button>
+    } className='btn-cart'>
+            Add to Cart
+          {/*  <FontAwesomeIcon icon ={faCoffee}/> // need to correct this part  */}
+    </button>
         </div>
     );
 };
